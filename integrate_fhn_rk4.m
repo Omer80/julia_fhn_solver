@@ -6,8 +6,8 @@ u = u0 ; v = v0;
 for t = time
   [u,v] = uv_rk4_step(u,v,a0,a1,d,eps,dx, dt);
   if mod(t,step)==0 % Print u to png image every step/dt
-    disp([t,mean(mean(u))]);
-    surf(u);
+    %disp([t,mean(mean(u))]);
+    imagesc(u);
     drawnow;
   endif
 endfor

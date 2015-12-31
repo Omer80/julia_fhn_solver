@@ -1,3 +1,11 @@
+%a0 = -0.1;
+%a1 = 2.0;
+%d  = 4.0;
+%eps  = 0.05;
+%dx = 1.0;
+%start=0;
+%step =1;
+%finish=100;
 function integrate_fhn_euler(start,finish,step,u0,v0,a0,a1,d,eps,dx,dt)
 time = [start+dt:dt:finish];
 figure(1);
