@@ -1,1 +1,1 @@
-# octave_fhn_solver
+# julia FHN model solver
