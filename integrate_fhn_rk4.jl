@@ -14,3 +14,4 @@ function integrate_fhn_rk4(start,finish,step,u0,v0,a0,a1,d,eps,dx)
   imshow(u)
   end
 end
+
