@@ -3,7 +3,7 @@ function laplacian(a,dx)
 # Usage: al=laplacian(a,dx)
 # where  dx is the grid interval
 
-       (ns,ns)=size(a)
+       ns,ns=size(a)
        aa=zeros(ns+2,ns+2)
        xr=2:(ns+1)
 
@@ -16,4 +16,3 @@ function laplacian(a,dx)
        lap=aa[xr-1,xr]+aa[xr+1,xr]+aa[xr,xr-1]+aa[xr,xr+1]-4*aa[xr,xr]
        lap=lap/(dx*dx)
 end
-

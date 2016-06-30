@@ -1,4 +1,11 @@
-function uv_rk4_step(u,v,a0,a1,d,eps,dx, dt)
+function uv_rk4_step(Vs,Ps, dt)
+  u = Vs.u
+  v = Vs.v
+  a0=Ps.a0
+  a1=Ps.a1
+  d=Ps.d
+  eps=Ps.eps
+  dx=Ps.dx
   du_k1, dv_k1 =	FHN_equation(u,v,a0,a1,d,eps,dx)
   u_k1 = dt*du_k1
   v_k1 = dt*dv_k1
